@@ -1,6 +1,6 @@
 import React from 'react';
 import {useForm} from 'react-hook-form';
-import {authService, firebaseInstance} from '../fbase';
+import {authService, firebaseInstance} from '../fbase.js';
 import TopBarUi from './TopBar.presenter';
 
 const TopBar = () => {
@@ -17,10 +17,11 @@ const TopBar = () => {
       Password: '',
     },
   });
-  const onSubmit = (data: any) => {};
-  console.log(errors);
+  console.log(firebaseInstance);
+  // const onSubmit = (data: any) => {};
+  // console.log(errors);
 
-  const onGoogleLogin = async (event: any) => {
+  const onGoogleLogin = (event: any) => {
     const {
       target: {name},
     } = event;

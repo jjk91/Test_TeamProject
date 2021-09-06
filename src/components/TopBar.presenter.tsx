@@ -43,9 +43,9 @@ const TopBarUi = (props: any) => {
         name="Password"
         rules={{required: true}}
       />
-      {/* <ButtonWrapper onPress={props.handleSubmit(props.onSubmit)}>
+      <ButtonWrapper onPress={props.handleSubmit(props.onSubmit)}>
         <LoginButton>{'로그인'}</LoginButton>
-      </ButtonWrapper> */}
+      </ButtonWrapper>
       <ButtonWrapper onPress={props.handleSubmit(props.onSubmit)}>
         <SocialLoginButton>{'소셜로그인'}</SocialLoginButton>
       </ButtonWrapper>
